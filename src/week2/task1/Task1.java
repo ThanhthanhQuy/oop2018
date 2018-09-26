@@ -27,7 +27,7 @@ public class Task1 {
     public static  void main(String[] argv) {
         int k=Task1.gcd(3,0);
         System.out.println(k+ "\n");
-        int k1=fibonacci(4);
+        int k1=fibonacci(0);
         System.out.println(k1);
 
 

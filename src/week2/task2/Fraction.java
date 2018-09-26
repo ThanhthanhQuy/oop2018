@@ -62,7 +62,7 @@ public class Fraction {
     public boolean equals(Object obj) {
         Fraction f2 = new Fraction(1,1);
         f2=this.subtract((Fraction)obj); // ep kiểu
-        if (f2.numerator * f2.denominator < 0) return true;
+        if (f2.numerator * f2.denominator == 0) return true;
         else return false;
     }
 
@@ -73,20 +73,16 @@ public class Fraction {
 
     public void show1(Fraction f2) {
         if (denominator != 0 && f2.denominator != 0) {
-            Fraction f3=this.subtract(f2);
-            if((f3.numerator* f3.denominator)==0) {System.out.println("Phan so thu nhat bang ps thu 2");}
-            else {
                 boolean t1 = this.equals(f2);
-                if (t1) System.out.println("Phan so thu nhat nho hon ps thu 2");
-                else System.out.println("Phan so thu nhat lon hon ps thu 2");
+                if (t1) System.out.println("Phan so thu nhat bang ps thu 2");
+                else System.out.println("Phan so thu nhat khong bang ps thu 2");
             }
-        }
          else System.out.println("phan so khong hop le");
 
     }
 
     public static void main(String[] argvs) {
-        Fraction f1 = new Fraction(72, 24);
+        Fraction f1 = new Fraction(23, 24);
         Fraction f2 = new Fraction(72, 24);
       //  System.out.println(f1.t+" "+ f2.t);
          Fraction  f3= f1.subtract(f2);
