@@ -60,9 +60,13 @@ public class Fraction {
     }
 
     public boolean equals(Object obj) {
+
         Fraction f2 = new Fraction(1,1);
         f2=this.subtract((Fraction)obj); // ep kiểu
-        if (f2.numerator * f2.denominator == 0) return true;
+        if(((Fraction) obj).denominator!=0 && denominator!=0) {
+            if (f2.numerator * f2.denominator == 0) return true;
+            else return false;
+        }
         else return false;
     }
 
@@ -82,8 +86,8 @@ public class Fraction {
     }
 
     public static void main(String[] argvs) {
-        Fraction f1 = new Fraction(23, 24);
-        Fraction f2 = new Fraction(72, 24);
+        Fraction f1 = new Fraction(0, 24);
+        Fraction f2 = new Fraction(0, 32);
       //  System.out.println(f1.t+" "+ f2.t);
          Fraction  f3= f1.subtract(f2);
        // System.out.println(f3.t+" ");
