@@ -25,7 +25,7 @@ public class Task1 {
         else return fibonacci(n-1)+ fibonacci(n-2);
     }
     public static  void main(String[] argv) {
-        int k=Task1.gcd(1,0);
+        int k=Task1.gcd(3,0);
         System.out.println(k+ "\n");
         int k1=fibonacci(4);
         System.out.println(k1);

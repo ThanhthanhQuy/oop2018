@@ -87,7 +87,7 @@ public class Fraction {
 
     public static void main(String[] argvs) {
         Fraction f1 = new Fraction(72, 24);
-        Fraction f2 = new Fraction(96, 30);
+        Fraction f2 = new Fraction(72, 24);
       //  System.out.println(f1.t+" "+ f2.t);
          Fraction  f3= f1.subtract(f2);
        // System.out.println(f3.t+" ");

@@ -1,11 +1,11 @@
 package week2.task3;
 
-public class Task3 {
+ class Task3 {
 }
 
     //TODO: khai báo 3 class tương ứng với 3 đối tượng thực tế ở dưới
     // RÚT TIỀN
-    public class Money {
+    class Money {
         private String name; // chủ tai khoan
         private int id; // số tài khản
         private int my; // tiền trong tài khoản
@@ -78,7 +78,7 @@ public class Task3 {
         }
     }
 //  CLASS VỀ ĐỘNG VẬT
-public class animal {
+ class animal {
     private String name; // tên đọng vật
     private boolean play;
     private boolean eat;
@@ -169,7 +169,7 @@ public class animal {
     }
 }
 //CLASS VỀ ĐỐI TƯỢNG GÓI HÀNG ĐI SHIP
-public class goods {
+ class goods {
     private String name; // tên sản phẩm
     private String customer; // tên khách hàng
     private String address; // nơi giao ha?ng
