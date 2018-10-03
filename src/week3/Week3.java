@@ -41,7 +41,7 @@ public class Week3 {
                 String BMI1="";
                 if (BMI < 18.5) BMI1 = "Thiếu cân";
                 else if (BMI >= 18.5 && BMI < 23) BMI1 = "Bình thường";
-                else if (BMI >= 23 && BMI <= 24.99) BMI1 = "Thừa cân";
+                else if (BMI >= 23 && BMI <= 25) BMI1 = "Thừa cân";
                 else if (BMI > 25) BMI1 = "Béo phì";
                 return BMI1;
             }
