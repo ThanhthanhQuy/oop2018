@@ -3,12 +3,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class Week3Test {
-    //mvn -DskipTests compile
     // TODO: Viết 5 testcase cho phương thức max()
     @Test
-    public void TestMax() {
-        assertEquals(4, Week3.max(3, 4));
-    }
+    public void TestMax() { assertEquals(4, Week3.max(3, 4)); }
     @Test
     public void TestMax1() {
         assertEquals(0, Week3.max(0, 0));
