@@ -47,4 +47,8 @@ public class Cam extends HoaQua {
         if(this.getCost()> c1.getCost()) System.out.println("cam có vỏ "+ this.Vocam+" đắt hơn cam có vỏ "+ c1.Vocam);
         else System.out.println("cam có vỏ "+ this.Vocam+" rẻ hơn cam có vỏ "+ c1.Vocam);
     }
+    public static void main(String[] argvs) {
+        Cam cam= new Cam(3,"hai phong", 3500, 7,"cam vuon","xanh");
+        Cam cam1= new Cam(5,"hai phong 1", 2500, 8,"cam rung","xanh");
+    }
 }
