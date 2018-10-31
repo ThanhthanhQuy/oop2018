@@ -4,7 +4,6 @@ import java.lang.ArithmeticException;
 
 public class ExpressionTest {
     public static void main(String[] argvs) {
-    try {
         Expression a1= new Numeral(10);
         Expression a2=new Numeral(2);
         Expression a3= new Numeral(1);
@@ -20,10 +19,7 @@ public class ExpressionTest {
         Expression a9=new Numeral(0);
         Expression c1= new Division(c,a9);
         System.out.println(c1.tostring());
-    }
-    catch (ArithmeticException e) {
-        System.out.println("Error ArithmeticException");
-    }
+
 
     }
 }

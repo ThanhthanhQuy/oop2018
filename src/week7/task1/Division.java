@@ -17,11 +17,21 @@ public class  Division  extends BinaryExpression {
     }
     @Override
     public String tostring() {
-        int t=left.evaluate()/right.evaluate();
-        return "result: "+ t ;
+        try {
+            int t = left.evaluate() / right.evaluate();
+            return "result" +t;
+        }
+        catch (ArithmeticException e) {
+            return "Error ArithmeticException";
+        }
     }
     @Override
     public int evaluate() {
-        return left.evaluate()/right.evaluate();
+        try {
+            return left.evaluate() / right.evaluate();
+        } catch (ArithmeticException e) {
+            System.out.println("Error ArithmeticException");
+            return 0;
+        }
     }
 }
