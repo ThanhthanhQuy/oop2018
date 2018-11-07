@@ -43,7 +43,7 @@ public class Utils {
     }
     public static File findFileByName(String folderPath, String fileName) {
         try {
-            String t = "/" + folderPath + "/" + fileName;
+            String t =  folderPath + "\\" + fileName;
             d = new File(t);
             System.out.println(d.exists());
         }
@@ -58,7 +58,7 @@ public class Utils {
         Utils.readContentFromFile("src\\week9\\data.txt");
         Utils.writeContentToFile1("src\\week9\\data.txt");
         Utils.readContentFromFile("src\\week9\\data.txt");
-        File t= Utils.findFileByName("D:/bt", "data.txt");
+        File t= Utils.findFileByName("src\\week9", "data.txt");
 
         }
 }
