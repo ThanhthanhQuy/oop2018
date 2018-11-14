@@ -16,7 +16,7 @@ public class Utils {
         } catch (IOException e) {
             System.out.println("fail file");
         }
-        return result;
+        return result; //f
     }
     public static void writeContentToFile(String path) {
         try {
@@ -28,19 +28,7 @@ public class Utils {
             System.out.println("fail write");
         }
 
-    }
-    public static void writeContentToFile1(String path) {
-        try {
-           FileOutputStream write= new FileOutputStream(path, true);
-           String a=" Thanh quy";
-            write.write(a.getBytes());
-            write.close();
-        }
-        catch (IOException e) {
-            System.out.println("fail write");
-        }
-
-    }
+    } //f
     public static File findFileByName(String folderPath, String fileName) {
         try {
             String t =  folderPath + "\\" + fileName;
@@ -51,14 +39,13 @@ public class Utils {
             System.out.println("fail find");
         }
         return d;
-    }
+    }//f
     public static void main(String[] argvs) {
         Utils.readContentFromFile("src\\week9\\data.txt");
         Utils.writeContentToFile("src\\week9\\data.txt");
         Utils.readContentFromFile("src\\week9\\data.txt");
-        Utils.writeContentToFile1("src\\week9\\data.txt");
         Utils.readContentFromFile("src\\week9\\data.txt");
         File t= Utils.findFileByName("src\\week9", "data.txt");
 
-        }
+        }//f
 }
